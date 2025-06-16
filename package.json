@@ -1,0 +1,49 @@
+{
+    "name": "tactus",
+    "description": "Add native-like haptic feedback to any web app.",
+    "keywords": [
+        "haptics",
+        "haptic",
+        "taptic",
+        "haptic-feedback",
+        "taptic-engine",
+        "taptic-feedback",
+        "vibrate",
+        "vibration",
+        "web",
+        "feedback",
+        "native",
+        "mobile",
+        "ios",
+        "android",
+        "native-like",
+        "vibration-feedback",
+        "touch",
+        "interaction"
+    ],
+    "version": "0.0.1",
+    "module": "src/index.ts",
+    "type": "module",
+    "license": "MIT",
+    "exports": {
+        ".": {
+            "import": "./dist/index.mjs",
+            "require": "./dist/index.cjs"
+        }
+    },
+    "main": "./dist/index.cjs",
+    "jsdelivr": "dist/packages/million.mjs",
+    "unpkg": "dist/packages/million.mjs",
+    "types": "./dist/index.d.ts",
+    "files": [
+        "dist"
+    ],
+    "scripts": {
+        "build": "unbuild"
+    },
+    "devDependencies": {
+        "@types/bun": "latest",
+        "typescript": "^5",
+        "unbuild": "^3.5.0"
+    }
+}
