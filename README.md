@@ -1,7 +1,6 @@
 # Tactus ✨
 
-Give your web app a little *tap of magic*—add native-style haptic feedback to every click.
-
+Give your web app a little _tap of magic_—add native-style haptic feedback to every click.
 
 ## 🚀 Install
 
@@ -9,30 +8,31 @@ Give your web app a little *tap of magic*—add native-style haptic feedback to 
 npm install tactus
 ```
 
-
 ## Usage
 
 ```jsx
 import { triggerHaptic } from "tactus";
 
 export default function BuyButton() {
-  return (
-    <button onClick={() => triggerHaptic()}>
-      Buy now
-    </button>
-  );
+    return <button onClick={() => triggerHaptic()}>Buy now</button>;
 }
 ```
 
-`triggerHaptic()` vibrates for the duration you pass (defaults to 100 ms).
-On iPhone/iPad it uses Safari’s built-in “tick”; everywhere else it falls back to the standard Vibration API.
-
+`triggerHaptic(duration?)` fires one haptic pulse.
+- No argument → 100 ms by default
+- iPhone / iPad → Safari’s crisp “tick” 💥
+- Other browsers → falls back to the Vibration API 📳
 
 ## 🌐 Browser support
 
+| Platform                      | Supported | Notes             |
+| ----------------------------- | --------- | ----------------- |
+| iOS 12 + (Safari & web-views) | ✅        | Native (switch)   |
+| Android 5 +                   | ✅        | Vibrations API    |
+| Desktop                       | 🚫        | Not supported yet |
 
 ## 📄 License
-MIT © 2025 Aadee
 
+MIT © 2025 Aadee
 
 Made with ❤️ by [Aadee](https://x.com/aadeexyz)
