@@ -25,6 +25,11 @@
     "module": "src/index.ts",
     "type": "module",
     "license": "MIT",
+    "homepage": "https://tactus.aadee.xyz",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/aadeexyz/tactus.git"
+    },
     "exports": {
         ".": {
             "import": "./dist/index.mjs",
