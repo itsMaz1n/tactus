@@ -1,4 +1,4 @@
-# Tactus ✨
+# Tactus 🌵
 
 Give your web app a little _tap of magic_—add native-style haptic feedback to every click.
 
