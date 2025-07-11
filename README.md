@@ -10,6 +10,7 @@ npm install tactus
 
 ## Usage
 
+React
 ```jsx
 import { triggerHaptic } from "tactus";
 
@@ -17,6 +18,12 @@ export default function BuyButton() {
     return <button onClick={() => triggerHaptic()}>Buy now</button>;
 }
 ```
+HTML + Vanilla JS
+```html
+<script src="src/tactus.min.js"></script>
+<button onclick="Tactus.triggerHaptic();">Try Tactus</button>
+```
+
 
 `triggerHaptic(duration?)` fires one haptic pulse.
 - No argument → 100 ms by default
